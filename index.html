@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blazar</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alice is a financial platform for measurable impact projects. We help impact investors, governments and nonprofits fund projects with fully tracked impact data and low transaction costs.">
+  <meta name="keywords" content="impact finance, impact data, blockchain, distributed ledger technology, social tech">
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/lib/rangeslider.css">
+  <link rel="stylesheet" href="css/lib/select2.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>  <!-- jQuery is required for Toastr -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="page-header main-header">
+    <section class="section-1">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h1 class="visually-hidden section-title">Blazar</h1>
+          <nav class="navbar navbar-dark navbar-expand-lg">
+            <a href="index.html" class="navbar-brand">
+              <img class="navbar-logo" src="img/section-1/main-logo.png" width="60" height="60" alt="Blazar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+              <span class="hamburger"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a href="#product" class="nav-link">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#integrations" class="nav-link">Integrations</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#community" target="_blank" class="nav-link">Community</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://github.com/" target="_blank" class="nav-link">Github</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="overview">
+            <div class="row mx-0">
+              <div class="col-md-6 col-lg-6 col-xl-7 px-0 order-1">
+                <h2 class="overview-title">Earn fixed interest upfront. <br> Borrow at fixed interest, fixed term. </h2>
+                <p class="overview-tagline">
+                  Blazar is a stable-rate DeFi protocol that pays your ‘savings’ interest upfront and allows you
+                  to borrow money for a fixed term, at a fixed interest rate.
+                  We won ETHLondon and are now inviting you to be our first dapp testers.
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-5 d-flex px-0 order-3">
+                <div class="overview-image-wrapper d-md-none">
+                  <img class="overview-image" src="/img/section-1/devices.png" width="100%" height="350" alt="Graphic on iPad">
+                </div>
+              </div>
+              <div class="overview-buttons order-2">
+                <a href="#" class="overview-button main-btn btn"> Test our Dapp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main class="page-main">
+    <section class="section-2" id="earn-and-borrow">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title visually-hidden">
+            Earn and Borrow
+          </h2>
+          <div class="earn-and-borrow">
+            <div class="switcher">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#earn">Earn</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#borrow">Borrow</a>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content">
+              <div id="earn" class="container tab-pane active">
+                <h3 class="visually-hidden">Earn</h3>
+                <div class="balance-summary">
+                  <div class="balance-summary__row row">
+                    <div class="balance-summary__col col-12 col-sm-6">
+                      <p class="balance-summary__text">Deposit</p>
+                      <p class="balance-summary__value">4,000.00</p>
+                    </div>
+                    <div class="balance-summary__col col-12 col-sm-6">
+                      <div class="balance-summary__balance-info">
+                        <p class="balance-summary__balance">
+                          <span class="balance-summary__balance-text">Your Balance:</span>
+                          <span class="balance-summary__balance-value">10,000.00</span>
+                        </p>
+                        <div class="balance-summary__dropdown">
+                          <select class="custom-coin-select" name="state">
+                            <option value="AL" data-image="img/section-2/dai.svg">DAI</option>
+                            <option value="WY" data-image="img/section-2/dai2.svg">DAI2</option>
+                            <option value="WY" data-image="img/section-2/dai3.svg">DAI3</option>
+                            <option value="WY" data-image="img/section-2/dai2.svg">DAI4</option>
+                            <option value="WY" data-image="img/section-2/dai3.svg">DAI5</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="transaction-information">
+                  <div class="transaction-information__row row">
+                    <div class="transaction-information-lock__col col-12 col-sm-6">
+                      <p class="transaction-information__text">Lock your deposit until</p>
+                      <div class="transaction-information-lock">
+                        <div class="transaction-information__calendar">
+                          <span class="transaction-information__month">Sep</span>
+                          <span class="transaction-information__separator">|</span>
+                          <span class="transaction-information__year">2020</span>
+                        </div>
+                        <div class="transactionion-information__range">
+                          <input type="range" min="1" max="12" step="1">
+                          <div class="transactionion-information__range-values">
+                            <span class="transactionion-information__min-value">min Jul</span>
+                            <span class="transactionion-information__max-value">max Dec</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="transaction-information-earn__col col-12 col-sm-6">
+                      <div class="transaction-information-earn">
+                        <p class="transaction-information__text">Earn interest now</p>
+                        <div class="transaction-information__currency">
+                          <div class="transaction-information__currency-info">
+                            <span class="transaction-information__currency-value">200</span>
+                            <div class="transaction-information__currency-icon">
+                              <div class="currency-icon">
+                                <img class="currency-icon-img" src="img/section-2/dai.svg" alt="DAI">
+                              </div>
+                              <span class="currency-name">DAI</span>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="transaction-information__percentage-information">
+                          <span class="transaction-information__percentage-unit">APY</span>
+                          <span class="transaction-information__percentage-separator">:</span>
+                          <span class="transaction-information__percentage">5%</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="make-button">
+                  <button class="overview-button main-btn btn-success getting-in-touch-submit" type="submit">Deposit</button>
+                </div>
+              </div>
+              <div id="borrow" class="container tab-pane fade">
+                <!-- YOUR CONTENT HERE-->
+
+                <h3>Borrow</h3>
+                <p>I dont know what I need to place here :)</p>
+                <p>You may copy widget same as in "Earn" tab, place it here and edit as you need</p>
+
+                <!-- YOUR CONTENT HERE-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-3" id="technical-integrations">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">
+            Technical integrations
+          </h2>
+          <div class="technical-integrations">
+            <div class="technical-integrations-row row">
+              <div class="technical-integrations-col col-12 col-sm-6 col-lg-4">
+                <div class="technical-integrations-card">
+                  <div class="card-img-wrapper">
+                    <div class="technical-integrations-logo">
+                      <img class="card-image" src="img/section-3/aave.svg" width="65" height="65" alt="Aave">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Aave</h5>
+                    <p class="card-text">
+                      The blockchain search engine for humans: visualise smart contract data in real-time with simple graphs.
+                    </p>
+                    <a class="technical-integrations-link" href="#" target="_blank">See it on our Github<span class="technical-integrations-link__icon"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="technical-integrations-col col-12 col-sm-6 col-lg-4">
+                <div class="technical-integrations-card">
+                  <div class="card-img-wrapper">
+                    <div class="technical-integrations-logo">
+                      <img class="card-image" src="img/section-3/opium.svg" width="65" height="65" alt="Opium">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Opium</h5>
+                    <p class="card-text">
+                      Automated impact validation: use IoT, NFC and API oracles to verify the completion of impact goals.
+                    </p>
+                    <a class="technical-integrations-link" href="#" target="_blank">Soon on our Github<span class="technical-integrations-link__icon"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="technical-integrations-col col-12 col-sm-6 col-lg-4">
+                <div class="technical-integrations-card">
+                  <div class="card-img-wrapper">
+                    <div class="technical-integrations-logo">
+                      <img class="card-image" src="img/section-3/melonport.svg" width="65" height="65" alt="Melonport">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Melonport</h5>
+                    <p class="card-text">
+                      Contactless wallets used for micro-incentive programs in environments that lack connectivity.
+                    </p>
+                    <a class="technical-integrations-link" href="#" target="_blank">Soon on our Github<span class="technical-integrations-link__icon"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-4" id="community-testing">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">
+            Testing on our community
+          </h2>
+          <div class="section-4-row row">
+            <div class="col-subscribition col-12 col-md-6">
+              <h4 class="section-title new-and-community-title">Give us your email to test our dapp and get paid</h4>
+              <form class="subscribition-form">
+                <div class="input-wrapper">
+                  <label class="email-label" for="email">Your email address</label>
+                  <input class="input-email" name="EMAIL" type="email" id="email">
+                </div>
+                <div class="submit-wrapper">
+                  <button type="submit" class="overview-button main-btn btn-success btn-submit">Test</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-follow-us col-12 col-md-6">
+              <h4 class="section-title follow-us-title">Join our channels to test our dapp and get paid</h4>
+              <div class="row m-0 follow-us-icons">
+                <a class="follow-us-icon medium-icon" target="_blank" href="https://medium.com/">
+                  <img src="img/section-4/medium.png" width="215" height="44" alt="Medium">
+                  <span class="visually-hidden">Medium</span>
+                </a>
+                <a class="follow-us-icon twitter-icon" target="_blank" href="https://twitter.com/">
+                  <img src="img/section-4/twitter.svg" width="60" height="49" alt="Twitter">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+                <a class="follow-us-icon telegram-icon" target="_blank" href="https://telegram.org/">
+                  <img src="img/section-4/telegram.svg" width="57" height="51" alt="Telegram">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+                <a class="follow-us-icon discord-icon" target="_blank" href="https://discord.com/">
+                  <img src="img/section-4/discord.svg" width="69" height="69" alt="Discord">
+                  <span class="visually-hidden">Discord</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-5" id="getting-in-touch">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="section-title">Getting in touch</h2>
+          <p class="section-tagline">
+            Please get in touch with  anything you’d like to discuss, whether that’s to invest in our round, work with us or  give us feedback.
+          </p>
+          <div class="getting-in-touch">
+            <form class="getting-in-touch-form row m-0" onsubmit="sendProjectProposal(); return false;">
+              <div class="getting-in-touch-col__first col-12 col-sm-6">
+                <div class="personal-information">
+                  <label class="form-label select-label">I am</label>
+                  <div class="getting-in-touch__dropdown">
+                    <div class="dropdown">
+                      <div class="select">
+                        <span class="select-span"></span>
+                        <div class="dropdown-icon dropdown-icon-chevron-left"></div>
+                      </div>
+                      <input type="hidden" name="gender" id="gender">
+                      <ul class="dropdown-menu">
+                        <li id="An Investor">An Investor</li>
+                        <li id="A Charity/NGO">A Charity/NGO</li>
+                        <li id="A grant-making body">A grant-making body</li>
+                        <li id="A local authority/government">A local authority/government</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <label class="form-label full-name-label" for="full-name">
+                    Full-name
+                  </label>
+                  <input class="form-input full-name-input" type="text" name="full-name" id="full-name">
+                </div>
+              </div>
+              <div class="getting-in-touch-col__last col-12 col-sm-6">
+                <div class="interest-information">
+                  <label class="form-label inerested-in-label" for="inerested-in">
+                    I would like to discuss
+                  </label>
+                  <input class="form-input inerested-in-input" type="text" name="inerested-in" id="inerested-in">
+                  <label class="form-label email-addres-label" for="email-address">
+                    Email address
+                  </label>
+                  <input class="form-input email-input" type="email" name="email-address" id="email-address">
+                </div>
+              </div>
+              <div class="getting-in-touch__button">
+                <button class="overview-button main-btn btn-success getting-in-touch-submit" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="footer-section">
+      <div class="wrapper">
+        <div class="container-fluid px-0">
+          <h2 class="visually-hidden section-title">
+            Our contacts
+          </h2>
+          <div class="our-contacts row">
+            <div class="contacts-col col-6 col-md-3 col-xs-11 col-xs-offset-1">
+              <p class="terms">
+                <!--<a class="terms-links" target="_blank" href="">Terms of Use</a>-->
+                <!--<a class="terms-links" target="_blank" href="">Privacy Policy</a>-->
+                <span class="blazar-copyright">© Blazar Ltd</span>
+              </p>
+            </div>
+            <div class="contacts-col col-6 col-md-4 col-xs-11 col-xs-offset-1">
+              <span class="contacts-title">Call us</span>
+              <a class="contacts-info contacts-info--tel" href="tel:+4402081239966">+44 (0) 20 8123 9966</a>
+            </div>
+            <div class="contacts-col col-6 col-md-3 col-xs-11 col-xs-offset-1">
+              <span class="contacts-title">Email us</span>
+              <a class="contacts-info contacts-info--mail" href="mailto:us@blazar.xyz">us@blazar.xyz</a>
+            </div>
+            <!--<div class="contacts-col col-6 col-md-3 col-xs-11 col-xs-offset-1">
+              <span class="contacts-title">Visit us</span>
+              <p class="contacts-info">
+                Google Campus <br>
+                4-5 Bonhill Street <br>
+                London EC2A 4BX <br>
+              </p>
+            </div>-->
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login form</h5>
+            <button class="close" type="button" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="container-fluid d-flex justify-content-center">
+              <form class="w-100 p-4">
+                <div class="form-row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="exampleInputEmail">Email address</label>
+                      <input type="email" class="form-control form-control-lg" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email">
+                      <small class="form-text text-muted" id="emailHelp">Enter your Email</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPass">Password</label>
+                      <input type="password" class="form-control form-control-lg" id="exampleInputPass" placeholder="Password">
+                      <small class="form-text text-muted" id="passHelp">Type your password</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">
+                    Remember me
+                  </label>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/rangeslider.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/send.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
